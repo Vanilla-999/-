@@ -1,0 +1,76 @@
+body {
+    background: #f7f5f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+}
+
+/* Карточка */
+.card {
+    text-align: center;
+    padding: 40px 60px;
+    border: 1px solid #d8d5cf;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.05);
+    background: #fdfbf7;
+}
+
+/* Тиснение — выдавленный текст */
+.emboss {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #111;
+    text-shadow: 1px 1px 1px #fff, -1px -1px 2px #cfcac3;
+}
+
+.emboss-light {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-top: -10px;
+    color: #333;
+    text-shadow: 1px 1px 1px #fff, -1px -1px 1px #d4d0cb;
+}
+
+/* Остальное */
+.line {
+    margin: 20px 0;
+    color: #bbb;
+    font-size: 12px;
+}
+
+.info {
+    font-size: 14px;
+    color: #444;
+    letter-spacing: 1px;
+}
+@media (max-width: 600px) {
+    .card {
+        padding: 25px 35px;
+        width: 80%;
+    }
+
+    h1.emboss {
+        font-size: 32px;
+        letter-spacing: 1.5px;
+    }
+
+    h2.emboss-light {
+        font-size: 14px;
+        letter-spacing: 3px;
+        margin-top: -5px;
+    }
+
+    .info {
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+
+    .line {
+        font-size: 10px;
+        margin: 15px 0;
+    }
+}
